@@ -1,4 +1,5 @@
 import {createBrowserRouter} from "react-router-dom";
+import Login from "../pages/login.tsx";
 
 const router = createBrowserRouter([
     {
@@ -6,11 +7,11 @@ const router = createBrowserRouter([
         // element: ,
         // errorElement: ,
         children: [{
-            path: '/login',
-            element: <div>login</div>
+            path: '/sign-in',
+            element: <Login />
             },
             {
-                path: '/register',
+                path: '/sign-up',
                 element: <div>register</div>
             }
         ]
